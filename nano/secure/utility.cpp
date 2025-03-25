@@ -38,7 +38,7 @@ std::filesystem::path nano::working_path (nano::networks network)
 			result /= "NanoBeta";
 			break;
 		case nano::networks::nano_live_network:
-			result /= "Nano";
+			result /= nano::env::get ("NANO_WORKING_APP_PATH").value_or ("XBRL");;
 			break;
 		case nano::networks::nano_test_network:
 			result /= "NanoTest";

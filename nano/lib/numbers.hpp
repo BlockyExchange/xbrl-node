@@ -14,11 +14,11 @@ using uint128_t = boost::multiprecision::uint128_t;
 using uint256_t = boost::multiprecision::uint256_t;
 using uint512_t = boost::multiprecision::uint512_t;
 // SI dividers
-nano::uint128_t const Gxrb_ratio = nano::uint128_t ("1000000000000000000000000000000000"); // 10^33
-nano::uint128_t const Mxrb_ratio = nano::uint128_t ("1000000000000000000000000000000"); // 10^30
-nano::uint128_t const kxrb_ratio = nano::uint128_t ("1000000000000000000000000000"); // 10^27
-nano::uint128_t const xrb_ratio = nano::uint128_t ("1000000000000000000000000"); // 10^24
-nano::uint128_t const raw_ratio = nano::uint128_t ("1"); // 10^0
+nano::uint128_t const Gxrb_ratio = nano::uint128_t ("10000000000000000000"); // 10^19 raw = 1000 Stable
+nano::uint128_t const Mxrb_ratio = nano::uint128_t ("10000000000000000"); // 10^16 raw = 1 Stable
+nano::uint128_t const kxrb_ratio = nano::uint128_t ("10000000000000"); // 10^13 raw = 0.001 Stable
+nano::uint128_t const xrb_ratio = nano::uint128_t ("10000000000"); // 10^10 raw = 0.000001 Stable
+nano::uint128_t const raw_ratio = nano::uint128_t ("1"); // 1 raw
 
 class uint128_union
 {

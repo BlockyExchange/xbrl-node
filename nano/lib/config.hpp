@@ -188,10 +188,10 @@ public:
 	{
 		if (is_live_network ())
 		{
-			default_node_port = 7075;
-			default_rpc_port = 7076;
-			default_ipc_port = 7077;
-			default_websocket_port = 7078;
+			default_node_port = 7015; std::stoi(std::string(std::getenv("NODE_PORT") ? std::getenv("NODE_PORT") : "7015"));
+			default_rpc_port = 7016; std::stoi(std::string(std::getenv("RPC_PORT") ? std::getenv("RPC_PORT") : "7016"));
+			default_ipc_port = 7017; std::stoi(std::string(std::getenv("IPC_PORT") ? std::getenv("IPC_PORT") : "7017"));
+			default_websocket_port = 7018; std::stoi(std::string(std::getenv("WEBSOCKET_PORT") ? std::getenv("WEBSOCKET_PORT") : "7018"));
 		}
 		else if (is_beta_network ())
 		{
